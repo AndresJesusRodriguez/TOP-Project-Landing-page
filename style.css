@@ -1,0 +1,6 @@
+* {
+    margin: 0;
+}
+header, .hero, .footer {
+    background-color: #1f2937;
+}
