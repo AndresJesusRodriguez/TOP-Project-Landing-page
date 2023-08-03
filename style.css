@@ -1,6 +1,11 @@
+/* adding initial font and colors from image template */
 * {
+    font-family: monospace;
+    box-sizing: border-box;
+}
+
+body {
     margin: 0;
-    font-family: 'roboto';
 }
 
 header, .hero, .footer {
@@ -11,6 +16,7 @@ header, .hero, .footer {
     font-size: 48px;
     font-weight: extra-bold;
     color: #f9faf8;
+    margin: 0;
 }
 
 .hero-secondary, .header-link {
@@ -25,11 +31,13 @@ header, .hero, .footer {
 }
 
 button {
-    color: #3882f6;
-}
-
-.call-to-action {
-    color: #3882f6;
+    box-shadow: none;
+    background-color: #3882f6;
+    width: 75px;
+    border-radius: 5px;
+    color: white;
+    border: white;
+    padding: 5px;
 }
 
 .info-header {
@@ -38,17 +46,115 @@ button {
     color: #1f2937;
 }
 
-blockquote {
+div blockquote {
     background-color: #e5e7eb;
     color: #1f2937;
     font-size: 36px;
     font-style: light italic;
+    margin: 150px;
 }
 
+
+img.horse {
+    border-radius: 25px;
+}
+/* Adding flex onto header */
 ul {
     list-style: none;
     display: flex;
     justify-content: flex-end;
     gap: 15px;
-    padding: 25px;
+    padding: 50px 200px;
+    margin: 0;
+}
+
+.hero {
+    display: flex;
+}
+
+.hero-horse {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.hero-child {
+   padding: 0 100px 0 200px;
+    margin: auto;
+
+}
+
+.hero-horse {
+    padding: 0 200px 0 100px;
+    margin: 50px;
+}
+
+
+.section-two {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+}
+
+.horses {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header, .hero, .section-two, .section-three, .section-four, .footer {
+    flex: 1;
+}
+
+/* adding third section flex layout */
+
+div.section-three {
+    display: flex;
+    background-color: #e5e7eb;
+    justify-content: space-around;
+}
+
+
+/* adding fourth section flex layout */
+
+div.section-four {
+    display: flex;
+    justify-content: center;
+    margin: 50px 100px;
+    padding: 50px;
+    background-color: #3882f6;
+    border-radius: 15px;
+}
+
+h4 {
+    margin: o;
+}
+
+.section-four-button {
+    display: flex;
+    padding: auto;
+    justify-content: space-around;
+}
+
+/* adding flex layout to footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 250px;
+}
+
+/* adjusting fonts */
+
+.call-to-action, .footer, span {
+    color: white;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
 }
